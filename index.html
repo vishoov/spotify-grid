@@ -124,6 +124,78 @@
             align-items: center;
             gap: 20px;
         }
+
+        .main-view{
+            padding: 40px;
+            background: linear-gradient(to bottom, #322961 36%,#000000 68%,#000000 100%);
+
+
+        }
+
+        .categories{
+            display: grid;
+            width: 45%;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            /* background-color: grey; */
+            gap: 10px;
+        }
+
+        .category{
+            padding: 8px;
+            border-radius:35px;
+            color: white;
+            border: none;
+            font-size: 16px;
+            background-color: rgba(255, 255, 255, 0.18);
+        }
+
+        .category:hover{
+            background-color: rgba(255, 255, 255, 0.397);
+            cursor: pointer;
+
+        }
+
+        .category:first-child{
+            background-color: white;
+            color: black;
+            
+        }
+
+        .recommendations{
+            display:grid;
+            grid-template-rows:repeat(4, 1fr);
+            grid-template-columns:repeat(2, 1fr);
+            gap:6px;
+
+            margin-top:20px;
+
+        }
+
+        .recomm{
+            height: 45px;
+            width:100%;
+            border-radius:5px;
+            display: grid;
+            grid-template-columns: 50px 1fr;
+            font-family:Arial, Helvetica, sans-serif;
+            gap:10px;
+            color: white;
+            align-items: center;
+            background-color: rgba(99, 98, 98, 0.71);
+            overflow: hidden;
+        }
+
+        .recomm img{
+            transform: scale(1.1);
+        }
+
+        .recomm:hover{
+            background-color: rgba(150, 150, 150, 0.71);
+            cursor:pointer
+        }
+
+
     </style>
 </head>
 <body>
@@ -169,7 +241,46 @@ style="fill:#FFFFFF;">
 
     <div class="main-grid">
         <div class="playlists"></div>
-        <div class="main-view"></div>
+        <div class="main-view">
+
+
+            <div class="categories">
+                <button class="category">All</button>
+                <button class="category">Music</button>
+                <button class="category">Podcasts</button>
+            </div>
+
+            <div class="recommendations">
+                <div class="recomm">
+                    <img src="./icon.jpeg" alt="Recommendation 1" width="100%" height="100%">
+                    <p>Liked Songs</p>
+                </div>
+                <div class="recomm">
+                    <img src="./icon.jpeg" alt="Recommendation 1" width="100%" height="100%">
+                    <p>Honey Singh</p>
+                </div><div class="recomm">
+                    <img src="./icon.jpeg" alt="Recommendation 1" width="100%" height="100%">
+                    <p>Karan Aujla</p>
+                </div><div class="recomm">
+                    <img src="./icon.jpeg" alt="Recommendation 1" width="100%" height="100%">
+                    <p>Guru Randhawa</p>
+                </div><div class="recomm">
+                    <img src="./icon.jpeg" alt="Recommendation 1" width="100%" height="100%">
+                    <p>Sidhu Moosewala</p>
+                </div><div class="recomm">
+                    <img src="./icon.jpeg" alt="Recommendation 1" width="100%" height="100%">
+                    <p>Dhanda Nyoliwala</p>
+                </div><div class="recomm">
+                    <img src="./icon.jpeg" alt="Recommendation 1" width="100%" height="100%">
+                    <p>Diljit Dosanjh</p>
+                </div><div class="recomm">
+                    <img src="./icon.jpeg" alt="Recommendation 1" width="100%" height="100%">
+                    <p>Random Playlist</p>
+                </div>
+            </div>
+
+        
+        </div>
         <div class="current"></div>
     </div>
 
