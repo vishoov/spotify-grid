@@ -14,6 +14,7 @@
 
         body{
             overflow: hidden;
+            background-color: black;
         }
 
 
@@ -48,6 +49,7 @@
             background-color: lightblue;
             height: calc(100vh - 160px);
             border-radius: 8px;
+            padding: 20px;
         }
         .main-view{
             background-color: lightgreen;
@@ -200,8 +202,84 @@
             background-color: rgba(150, 150, 150, 0.71);
             cursor:pointer
         }
-
-
+        
+        
+    </style>
+    <style>
+        .heading{
+            display:grid;
+            grid-template-columns:1fr 100px;
+            grid-template-rows:1fr 1fr;
+            height: 60px;
+            margin-top: 22px;
+            align-items: center;
+        }
+    
+        .heading p{
+            grid-column:1/3;
+            font-size: 13px;
+            color: #a2a2a2aa;
+        }
+    
+        .heading button{
+            height: 50%;
+            background-color: transparent;
+            border: none;
+            color: white;
+        }
+    
+        .heading h2{
+            color: white;
+        }
+    
+        .heading h2:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    
+        .heading button:hover{
+    
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    
+        .content{
+            height: 150px;
+            width: 110px;
+            margin-top: 20px;
+            padding: 5px;
+            display: grid;
+            grid-template-rows: 1fr 20%;
+            gap:5px;
+            border-radius: 5px;
+        }
+    
+        .content:hover{
+            background-color: rgba(128, 128, 128, 0.563);
+            transition:background-color 0.2s ease-in-out;
+    
+        }
+    
+        .content p{
+            font-size: 12px;
+            color: rgb(188, 188, 188);
+    
+        }
+    
+        .content img{
+            border-radius: 5px;
+        }
+    
+        .content-container{
+            display: grid;
+            grid-template-rows:1fr;
+            grid-template-columns:repeat(6, 1fr);
+            overflow-x: scroll ;
+            width: 100%;
+            scrollbar-width: none;
+            gap: 5px;
+        }
+    
     </style>
 </head>
 <body>
@@ -245,8 +323,72 @@ style="fill:#FFFFFF;">
 
     </nav>
 
+    <style>
+        .first-line{
+            display: grid;
+            grid-template-columns:1fr 30px 30px;
+            grid-template-rows:1fr;
+            gap:10px;
+            color: white;
+            align-items: center;
+
+        }
+
+        .playlists{
+            background-color: #171717ce !important;
+        }
+        .first-line button{
+            border: none;
+            background-color: transparent;
+            color: white;
+            font-size: large;
+        }
+
+        .add{
+            border-radius: 50%;
+            background-color: grey !important;
+            padding: 4px;
+
+        }
+
+        .second-line{
+            padding: 0 5px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 10px;
+            margin-top: 10px;
+            width: 200px;
+            overflow-x: scroll;
+            scrollbar-width: none;
+
+
+        }
+
+        .second-line button{
+            padding: 5px;
+            border-radius: 30px;
+            background-color: grey;
+            border: none;
+            color: white;
+        }
+    </style>
+
     <div class="main-grid">
-        <div class="playlists"></div>
+        <div class="playlists">
+            <div class="first-line">
+                <h3>Your Library</h3>
+                <button class="add">+</button>
+                <button>\/</button>
+            </div>
+
+            <div class="second-line">
+                <button>Playlists</button>
+                <button>Artists</button>
+                <button>Albums</button>
+                <button>Podcast</button>
+            </div>
+        </div>
         <div class="main-view">
 
 
@@ -285,82 +427,6 @@ style="fill:#FFFFFF;">
                 </div>
             </div>
 
-            <style>
-                .heading{
-                    display:grid;
-                    grid-template-columns:1fr 100px;
-                    grid-template-rows:1fr 1fr;
-                    height: 60px;
-                    margin-top: 22px;
-                    align-items: center;
-                }
-
-                .heading p{
-                    grid-column:1/3;
-                    font-size: 13px;
-                    color: #a2a2a2aa;
-                }
-
-                .heading button{
-                    height: 50%;
-                    background-color: transparent;
-                    border: none;
-                    color: white;
-                }
-
-                .heading h2{
-                    color: white;
-                }
-
-                .heading h2:hover{
-                    text-decoration: underline;
-                    cursor: pointer;
-                }
-
-                .heading button:hover{
-
-                    cursor: pointer;
-                    text-decoration: underline;
-                }
-
-                .content{
-                    height: 150px;
-                    width: 110px;
-                    margin-top: 20px;
-                    padding: 5px;
-                    display: grid;
-                    grid-template-rows: 1fr 20%;
-                    gap:5px;
-                    border-radius: 5px;
-                }
-
-                .content:hover{
-                    background-color: rgba(128, 128, 128, 0.563);
-                    transition:background-color 0.2s ease-in-out;
-
-                }
-
-                .content p{
-                    font-size: 12px;
-                    color: rgb(188, 188, 188);
-
-                }
-
-                .content img{
-                    border-radius: 5px;
-                }
-
-                .content-container{
-                    display: grid;
-                    grid-template-rows:1fr;
-                    grid-template-columns:repeat(6, 1fr);
-                    overflow-x: scroll ;
-                    width: 100%;
-                    scrollbar-width: none;
-                    gap: 5px;
-                }
-
-            </style>
 
             <div class="recent-activity">
                 <div class="heading">
