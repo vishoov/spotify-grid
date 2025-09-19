@@ -9,6 +9,11 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            overflow: hidden;
         }
 
 
@@ -127,8 +132,9 @@
 
         .main-view{
             padding: 40px;
-            background: linear-gradient(to bottom, #322961 36%,#000000 68%,#000000 100%);
+            background: linear-gradient(to bottom, #322961 36%,#121212 68%,#121212 100%);
 
+        overflow: auto;
 
         }
 
@@ -279,6 +285,175 @@ style="fill:#FFFFFF;">
                 </div>
             </div>
 
+            <style>
+                .heading{
+                    display:grid;
+                    grid-template-columns:1fr 100px;
+                    grid-template-rows:1fr 1fr;
+                    height: 60px;
+                    margin-top: 22px;
+                    align-items: center;
+                }
+
+                .heading p{
+                    grid-column:1/3;
+                    font-size: 13px;
+                    color: #a2a2a2aa;
+                }
+
+                .heading button{
+                    height: 50%;
+                    background-color: transparent;
+                    border: none;
+                    color: white;
+                }
+
+                .heading h2{
+                    color: white;
+                }
+
+                .heading h2:hover{
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+
+                .heading button:hover{
+
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+
+                .content{
+                    height: 150px;
+                    width: 110px;
+                    margin-top: 20px;
+                    padding: 5px;
+                    display: grid;
+                    grid-template-rows: 1fr 20%;
+                    gap:5px;
+                    border-radius: 5px;
+                }
+
+                .content:hover{
+                    background-color: rgba(128, 128, 128, 0.563);
+                    transition:background-color 0.2s ease-in-out;
+
+                }
+
+                .content p{
+                    font-size: 12px;
+                    color: rgb(188, 188, 188);
+
+                }
+
+                .content img{
+                    border-radius: 5px;
+                }
+
+                .content-container{
+                    display: grid;
+                    grid-template-rows:1fr;
+                    grid-template-columns:repeat(6, 1fr);
+                    overflow-x: scroll ;
+                    width: 100%;
+                    scrollbar-width: none;
+                    gap: 5px;
+                }
+
+            </style>
+
+            <div class="recent-activity">
+                <div class="heading">
+                    <p>Inspired by your recent activity</p>
+                    <h2>Based on your recent listening</h2>
+                    <button>Show All</button>
+                </div>
+                <div class="content-container">
+                <div class="content">
+                    <img src="https://i.scdn.co/image/ab67706f000000026ee528051c3682a517716a41" height="100%" width="100%" alt="Content"/>
+                    <p>This is Brown Munde.</p>
+                </div>
+                <div class="content">
+                    <img src="https://i.scdn.co/image/ab67706f000000026ee528051c3682a517716a41" height="100%" width="100%" alt="Content"/>
+                    <p>This is Brown Munde.</p>
+                </div><div class="content">
+                    <img src="https://i.scdn.co/image/ab67706f000000026ee528051c3682a517716a41" height="100%" width="100%" alt="Content"/>
+                    <p>This is Brown Munde.</p>
+                </div>
+                <div class="content">
+                    <img src="https://i.scdn.co/image/ab67706f000000026ee528051c3682a517716a41" height="100%" width="100%" alt="Content"/>
+                    <p>This is Brown Munde.</p>
+                </div><div class="content">
+                    <img src="https://i.scdn.co/image/ab67706f000000026ee528051c3682a517716a41" height="100%" width="100%" alt="Content"/>
+                    <p>This is Brown Munde.</p>
+                </div><div class="content">
+                    <img src="https://i.scdn.co/image/ab67706f000000026ee528051c3682a517716a41" height="100%" width="100%" alt="Content"/>
+                    <p>This is Brown Munde.</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="recent-activity">
+                <div class="heading">
+                    <p>Inspired by your recent activity</p>
+                    <h2>Based on your recent listening</h2>
+                    <button>Show All</button>
+                </div>
+                <div class="content-container">
+                <div class="content">
+                    <img src="https://i.scdn.co/image/ab67706f000000026ee528051c3682a517716a41" height="100%" width="100%" alt="Content"/>
+                    <p>This is Brown Munde.</p>
+                </div>
+                <div class="content">
+                    <img src="https://i.scdn.co/image/ab67706f000000026ee528051c3682a517716a41" height="100%" width="100%" alt="Content"/>
+                    <p>This is Brown Munde.</p>
+                </div><div class="content">
+                    <img src="https://i.scdn.co/image/ab67706f000000026ee528051c3682a517716a41" height="100%" width="100%" alt="Content"/>
+                    <p>This is Brown Munde.</p>
+                </div>
+                <div class="content">
+                    <img src="https://i.scdn.co/image/ab67706f000000026ee528051c3682a517716a41" height="100%" width="100%" alt="Content"/>
+                    <p>This is Brown Munde.</p>
+                </div><div class="content">
+                    <img src="https://i.scdn.co/image/ab67706f000000026ee528051c3682a517716a41" height="100%" width="100%" alt="Content"/>
+                    <p>This is Brown Munde.</p>
+                </div><div class="content">
+                    <img src="https://i.scdn.co/image/ab67706f000000026ee528051c3682a517716a41" height="100%" width="100%" alt="Content"/>
+                    <p>This is Brown Munde.</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="recent-activity">
+                <div class="heading">
+                    <p>Inspired by your recent activity</p>
+                    <h2>Based on your recent listening</h2>
+                    <button>Show All</button>
+                </div>
+                <div class="content-container">
+                <div class="content">
+                    <img src="https://i.scdn.co/image/ab67706f000000026ee528051c3682a517716a41" height="100%" width="100%" alt="Content"/>
+                    <p>This is Brown Munde.</p>
+                </div>
+                <div class="content">
+                    <img src="https://i.scdn.co/image/ab67706f000000026ee528051c3682a517716a41" height="100%" width="100%" alt="Content"/>
+                    <p>This is Brown Munde.</p>
+                </div><div class="content">
+                    <img src="https://i.scdn.co/image/ab67706f000000026ee528051c3682a517716a41" height="100%" width="100%" alt="Content"/>
+                    <p>This is Brown Munde.</p>
+                </div>
+                <div class="content">
+                    <img src="https://i.scdn.co/image/ab67706f000000026ee528051c3682a517716a41" height="100%" width="100%" alt="Content"/>
+                    <p>This is Brown Munde.</p>
+                </div><div class="content">
+                    <img src="https://i.scdn.co/image/ab67706f000000026ee528051c3682a517716a41" height="100%" width="100%" alt="Content"/>
+                    <p>This is Brown Munde.</p>
+                </div><div class="content">
+                    <img src="https://i.scdn.co/image/ab67706f000000026ee528051c3682a517716a41" height="100%" width="100%" alt="Content"/>
+                    <p>This is Brown Munde.</p>
+                </div>
+            </div>
+            </div>
         
         </div>
         <div class="current"></div>
